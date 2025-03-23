@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_css.css')}}" type="text/css"/>
+</head>
+<body>
+    <h2>SENTIMENT ANALYSIS</h2>
+    <form action = "/Sentiment" method = "POST">
+        <div class = "container">
+            <div class = "inputField_submit">
+               <input class = "inputField" type="text" name="review" id="review" required pattern="[^Α-Ωα-ω]*" title="Use only English">
+               <input class = "submitButton" type = "submit" value = "CHECK SENTIMENT" />
+            </div>
+            <div class="sentiment">
+                <!-- Εαν υπαρχει το 'message' το οποιο στελνεται απο την διαδρομη της ταξινομησης του νεου review απο το αρχειο webApp.py,
+                 τοτε εμφανιζεται το αναλογο συναισθημα και η αναλογη εικονα -->
+                {% if message %}
+                    <h2>Sentiment: {{message.split('.')[0]}}</h2>
+                    <img src="{{ url_for('static', filename=message) }}" alt="Sentiment Image">
+                {% endif %}
+            </div>
+        </div>
+    </form>
+</body>

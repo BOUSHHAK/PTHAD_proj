@@ -1,0 +1,71 @@
+body{
+    background-color:rgb(98, 0, 255);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+form {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+.container {
+    background-color:rgb(98, 0, 255);
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    columns : 2;
+    min-width: 800px;
+    max-width: 500px;
+    max-height: 500px;
+    min-height: 350px;
+    box-shadow: 0 0 100px rgb(0, 0, 0);
+    border-radius: 40px;
+}
+
+h2 {
+    background-color:rgb(1, 255, 1);
+    padding : 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 150px rgb(0, 0, 0);
+}
+.inputField_submit {
+    display : flex;
+    flex-direction : column;
+    margin-left: 60px;
+}
+
+.sentiment {
+    margin-left: 50px;
+    text-align: center;
+    border-left: 2px solid rgb(1, 255, 1);
+    padding-left: 30px;
+}
+
+.inputField {
+    padding: 10px 50px;
+    margin: 20px 0 20px 0px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 220px;
+    min-width: 220px;
+    max-height: 570px;
+    min-height: 50px;
+}
+
+.submitButton {
+    padding : 10px;
+    margin : 10px 70px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submitButton:hover{
+    background-color: rgb(253, 2, 23);
+}
+
+img {
+    border-radius: 20px;
+    width:200px;
+    height:200px;
+}
